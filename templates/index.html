@@ -6,7 +6,7 @@
   	<!-- форма -->
   	<section>
   		<div class="container class_form">
-  			<h1 class="text-3">Оставь заявку и получи услугу</h1>
+  			<h1 class="text-3">Оставь заявку</h1>
   			<div class="row justify-content-center">
   			<form action="{% url 'thanks_page' %}" method="POST" style="width: 50%;">
 				{% csrf_token %}
@@ -23,7 +23,7 @@
 			    </div>
 			  </div>
 			  <div style="float: right;" class="form-group row">
-			      <button type="submit" class="btn btn-success">ОСТАВИТЬ ЗАЯВКУ</button>
+			      <button type="submit" class="btn btn-success">Подать заявку</button>
 			  </div>
 			</form>
 			</div>
