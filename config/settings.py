@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['127.0.0.1',]
 # Application definition
 
 INSTALLED_APPS = [
+    'telegbot.apps.TelegbotConfig',
     'cms.apps.CmsConfig',
     'crm.apps.CrmConfig',
     'django.contrib.admin',

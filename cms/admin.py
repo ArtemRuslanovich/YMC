@@ -3,6 +3,7 @@ from django.utils.safestring import mark_safe
 
 from .models import CmsSlider
 
+
 # Register your models here.
 class CmsAdmin(admin.ModelAdmin):
     list_display = ('cms_title', 'cms_text', 'cms_css', 'get_img')
@@ -18,6 +19,7 @@ class CmsAdmin(admin.ModelAdmin):
             return 'нет картинки'
 
     get_img.short_description = 'Миниатюра'
+
 
 # phone.png
 admin.site.register(CmsSlider, CmsAdmin)
